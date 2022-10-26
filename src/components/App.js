@@ -29,7 +29,7 @@ function App(props) {
     let loadChars = [];
     props.character.items.filter((item) => {
       if (item.name.toLowerCase().includes(text.toLowerCase())) {
-        loadChars.push(item);
+        return loadChars.push(item);
       }
     });
     setChars(loadChars);

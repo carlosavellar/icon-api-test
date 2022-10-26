@@ -16,7 +16,7 @@ export const CharactersReducer = (state = INITIAL_STATE, action) => {
           if (item) {
             return item;
           } else {
-            console.log('nada aqui');
+            return 'nada aqui';
           }
         })
         .filter((item) => {
