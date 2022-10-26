@@ -11,9 +11,11 @@ import SearchForm from './SearchForm';
 function App(props) {
   const [chars, setChars] = useState([]);
 
+  const { getCharacterRequest } = props;
+
   useEffect(() => {
-    props.getCharacterRequest();
-  }, []);
+    getCharacterRequest();
+  }, [getCharacterRequest]);
 
   const loadChars = useCallback(() => {
     if (chars.length === 0) {

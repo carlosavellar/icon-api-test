@@ -1,7 +1,5 @@
 import React from 'react';
-
 import Grid from '@mui/material/Grid';
-
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 
