@@ -29,6 +29,7 @@ function App(props) {
 
   const handlerFilterCharacter = (text) => {
     let loadChars = [];
+    // eslint-disable-next-line array-callback-return
     props.character.items.filter((item) => {
       if (item.name.toLowerCase().includes(text.toLowerCase())) {
         return loadChars.push(item);
