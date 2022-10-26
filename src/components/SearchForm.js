@@ -5,17 +5,13 @@ import Box from '@mui/material/Box';
 import FormControl from '@mui/material/FormControl';
 
 function SearchForm(props) {
+  const { onSearchChar } = props;
   const [searchText, setSearchText] = useState('');
 
   const handlerSearchText = (e) => {
     setSearchText(e.target.value);
-  };
-
-  const { onSearchChar } = props;
-
-  useEffect(() => {
     onSearchChar(searchText);
-  }, [searchText]);
+  };
 
   return (
     <Box
