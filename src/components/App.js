@@ -13,7 +13,7 @@ function App(props) {
 
   useEffect(() => {
     props.getCharacterRequest();
-  }, [props]);
+  }, []);
 
   const loadChars = useCallback(() => {
     if (chars.length === 0) {
